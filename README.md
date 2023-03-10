@@ -1,5 +1,9 @@
 # Node.js Script to Upload files from local to Files.com server bucket with its JS API
 
+## Initialization
+
+- rename env.example to .env and add your API key and subdomain
+
 ## Usage
 
 ### Yarn
