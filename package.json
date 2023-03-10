@@ -1,0 +1,24 @@
+{
+  "name": "scp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://nathanjmorton@github.com/nathanjmorton/scp.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nathanjmorton/scp/issues"
+  },
+  "homepage": "https://github.com/nathanjmorton/scp#readme",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "files.com": "^1.0.254"
+  }
+}
