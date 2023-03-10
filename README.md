@@ -17,3 +17,7 @@ yarn && yarn start
 npm install && npm start
 
 ```
+
+## TODO
+
+- connect S3 bucket event to trigger long running container job which runs the script
