@@ -1,5 +1,6 @@
 const fs = require("fs");
 const path = require("path");
+const { uploadFile } = require("./upload");
 
 const directoryPath = "."; // Replace with your directory path
 
@@ -22,8 +23,13 @@ fs.readdir(directoryPath, function (err, files) {
 
   // loop over fileArray and upload each file
   fileArray.forEach((file) => {
+    // console.log("file: ", file);
     console.log("file: ", file);
+    uploadFile({
+      destinationFileName: file,
+      sourceFilePath: file,
+    });
   });
 
-  console.log("File array:", fileArray);
+  // console.log("File array:", fileArray);
 });
