@@ -6,8 +6,9 @@ const { LogLevel } = require("files.com/lib/Logger").default;
 require("dotenv").config();
 // dotenv.config();
 const FILES_API_KEY = process.env.FILES_API_KEY;
+const FILES_SUBDOMAIN = process.env.FILES_SUBDOMAIN;
 // set your subdomain or custom domain
-Files.setBaseUrl("https://nathanmorton.files.com");
+Files.setBaseUrl(`https://${FILES_SUBDOMAIN}.files.com`);
 Files.setApiKey(FILES_API_KEY);
 Files.setLogLevel(LogLevel.INFO);
 Files.configureDebugging({
