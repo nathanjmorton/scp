@@ -22,10 +22,10 @@ fs.readdir(directoryPath, function (err, files) {
   });
 
   // loop over fileArray and upload each file
-  fileArray.forEach((file) => {
+  fileArray.forEach(async (file) => {
     // console.log("file: ", file);
     console.log("file: ", file);
-    uploadFile({
+    await uploadFile({
       destinationFileName: file,
       sourceFilePath: file,
     });

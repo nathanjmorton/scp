@@ -9,14 +9,14 @@ const FILES_API_KEY = process.env.FILES_API_KEY;
 // set your subdomain or custom domain
 Files.setBaseUrl("https://nathanmorton.files.com");
 Files.setApiKey(FILES_API_KEY);
-// Files.setLogLevel(LogLevel.INFO);
-// Files.configureDebugging({
-//   // enable debug logging of API requests (default: false)
-//   debugRequest: false,
+Files.setLogLevel(LogLevel.INFO);
+Files.configureDebugging({
+  // enable debug logging of API requests (default: false)
+  debugRequest: false,
 
-//   // enable debug logging of API response headers (default: false)
-//   debugResponseHeaders: false,
-// });
+  // enable debug logging of API response headers (default: false)
+  debugResponseHeaders: false,
+});
 Files.configureNetwork({
   // max retries (default: 3)
   maxNetworkRetries: 3,
